@@ -66,10 +66,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W             &kp E         &kp R       &kp T                                                &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S             &kp D         &kp F       &kp G         &kp LC(Y)        &kp LS(LG(NUMBER_4))  &kp H          &kp J  &lt 5 K    &kp L    &kp SEMICOLON
-&kp Z           &kp X             &kp C         &kp V       &kp B         &kp ESC          &kp TAB               &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 2 CLCK  &kp LEFT_GUI  &lt 1 SPACE      &lt 2 RETURN          &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp Q           &kp W             &kp E         &kp R         &kp T                                        &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S             &kp D         &kp F         &kp G        &kp LC(Y)         &lt 7 CLCK    &kp H          &kp J  &lt 5 K    &kp L    &kp SEMICOLON
+&kp Z           &kp X             &kp C         &kp V         &kp B        &lt 3 ESCAPE      &kp TAB       &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 SPACE  &lt 2 CAPS        &lt 2 RETURN  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -99,10 +99,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp PLUS         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp KP_SUBTRACT  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp KP_NUMBER_0  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -135,12 +135,12 @@
             >;
         };
 
-        layer_7 {
+        BLE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bt BT_CLR  &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
