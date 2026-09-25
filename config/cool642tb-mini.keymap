@@ -90,7 +90,7 @@
             bindings = <
 &kp LA(LC(E))  &kp LA(LC(R))  &kp LA(LC(T))  &kp LA(LC(U))  &kp LC(LA(I))                          &kp LC(LEFT_ARROW)    &kp LEFT_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW   &kp LC(RIGHT_ARROW)
 &kp LA(LC(D))  &kp LA(LC(F))  &kp LA(LC(G))  &kp LA(LC(J))  &kp LA(LC(K))  &kp LS(LT)      &trans  &kp C_BRIGHTNESS_INC  &kp LC(DOWN_ARROW)  &kp DOWN      &kp LC(UP_ARROW)  &kp C_VOLUME_UP
-&trans         &trans         &trans         &trans         &trans         &trans          &trans  &kp C_BRIGHTNESS_DEC  &kp LG(LC(F))       &kp LG(TAB)   &kp K_MUTE        &kp K_VOLUME_DOWN
+&trans         &trans         &trans         &trans         &trans         &trans          &trans  &kp C_BRIGHTNESS_DEC  &kp LG(LC(F))       &kp LG(TAB)   &kp K_MUTE        &kp C_VOL_DN
 &trans         &trans         &trans         &trans         &trans         &trans          &trans  &trans                                                                    &trans
             >;
 
@@ -99,10 +99,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &kp PLUS         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_ASTERISK
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &kp KP_SUBTRACT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans      &kp PERIOD  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                     &trans
+&trans  &trans  &trans  &trans  &trans                          &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTRK
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans      &kp PERIOD  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
