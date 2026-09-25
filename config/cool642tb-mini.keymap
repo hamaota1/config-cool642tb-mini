@@ -48,6 +48,16 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <6 7>;
         };
+
+        Expand {
+            bindings = <&kp LG(LS(EQUAL))>;
+            key-positions = <8 9>;
+        };
+
+        Shrink {
+            bindings = <&kp LG(MINUS)>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
